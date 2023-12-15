@@ -16,7 +16,7 @@ const DownloadButton = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:8000/downloadData');
+            const response = await fetch('https://reg-sim.ru/api/downloadData');
             const blob = await response.blob();
 
             const url = window.URL.createObjectURL(new Blob([blob]));
